@@ -5,8 +5,8 @@
 
   <form class="p-2" method="get" action="main">
     <input class="rounded" type="text" name="filter" value="${filter}">
-    <button type="submit" class="btn btn-primary">Поиск</button>
-
+    <button type="submit" class="btn btn-primary">Поиск по полям</button>
+    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
   </form>
 
     <#list diplomas as diplomas>
@@ -16,7 +16,7 @@
         <span>Студент: ${diplomas.student}, ${diplomas.direction}</span><br>
         <span>Научрук: ${diplomas.director}</span><br>
         <div>
-          <a href="/pdfs/${diplomas.filename}"> Открыть</a>
+          <a href="/pdfs/${diplomas.filename}">Открыть</a>
         </div>
       </div>
     </#list>

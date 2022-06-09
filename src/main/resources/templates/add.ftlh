@@ -26,6 +26,7 @@
         <span>Тип работы: ${diplomas.type}</span><br>
         <span>Студент: ${diplomas.student} группы ${diplomas.direction}</span><br>
         <span>Научный руководитель: ${diplomas.director}</span><br>
+        <span>Id is ${diplomas.id}</span>
         <div>
           <a href="/pdfs/${diplomas.filename}">Открыть</a>
           <a href="/delete/${diplomas.id}"> Удалить</a>

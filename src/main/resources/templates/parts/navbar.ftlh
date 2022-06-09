@@ -17,7 +17,8 @@
             диплом</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" style="color: white" href="/searchContains">Искать по содержимому</a>
+          <a class="nav-link active" aria-current="page" style="color: white"
+             href="/searchContains">Искать по содержимому</a>
         </li>
       </ul>
     </div>

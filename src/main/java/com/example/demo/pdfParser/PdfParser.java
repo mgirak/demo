@@ -28,7 +28,7 @@ public class PdfParser {
   public String readWhole(String fileName) throws IOException{
     try (var doc = PDDocument.load(new File(path + fileName))) {
       var reader = new PDFTextStripper();
-     return reader.getText(doc);
+      return reader.getText(doc);
     }
   }
 

@@ -5,8 +5,8 @@
 
   <form class="p-2" method="get" action="searchContains">
     <input class="rounded" type="text" name="filter" value="${filter}">
-    <button type="submit" class="btn btn-primary">Поиск</button>
-
+    <button type="submit" class="btn btn-primary">Поиск по содержимому</button>
+    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
   </form>
 
     <#list diplomas as diplomas>
